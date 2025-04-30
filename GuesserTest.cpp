@@ -17,8 +17,4 @@ class GuesserTest : public ::testing::Test {
     } // clean up after each test, (before destructor)
 };
 
-// Example "smoke test" (can be deleted)
-TEST(GuesserTest, smoke_test) {
-    Guesser object("Secret");
-    ASSERT_EQ(1 + 1, 2);
 }

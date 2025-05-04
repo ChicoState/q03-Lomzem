@@ -78,7 +78,12 @@ TEST(GuesserTest, match_both_one_letter_diff) {
     ASSERT_FALSE(object.match("b"));
 }
 
-TEST(GuesserTest, match_upper_lower_diff) {
+TEST(GuesserTest, match_upper_lower_diff_one_char) {
+    Guesser object("a");
+    ASSERT_FALSE(object.match("A"));
+}
+
+TEST(GuesserTest, match_upper_lower_diff_word) {
     Guesser object("seCret");
     ASSERT_FALSE(object.match("secret"));
 }
